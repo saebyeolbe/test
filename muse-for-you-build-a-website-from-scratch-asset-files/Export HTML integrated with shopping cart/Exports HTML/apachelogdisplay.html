@@ -6,9 +6,10 @@
   $f = fopen("C:\xampp\apache\logs\access.txt", "r");
   while(!feof($f)) {
 	    echo fgets($f) . "<br />";
+      fclose($f);
 	}
 
-	fclose($f);
+
 
   ?>
 </body>
