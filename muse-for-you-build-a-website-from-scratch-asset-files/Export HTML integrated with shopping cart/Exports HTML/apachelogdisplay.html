@@ -4,7 +4,12 @@
  <header>Reading from audit files</header>
   <?php
   $f = fopen("xampp\apache\logs\access.txt", "r");
-  echo fgets($f)
+  while(!feof($f)) {
+	    echo fgets($f) . "<br />";
+	}
+
+	fclose($f);
+
   ?>
 </body>
 </html>
