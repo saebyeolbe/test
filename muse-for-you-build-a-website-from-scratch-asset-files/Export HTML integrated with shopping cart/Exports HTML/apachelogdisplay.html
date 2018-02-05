@@ -3,7 +3,7 @@
  <title>Reading from audit file</title>
  <header>Reading from audit files</header>
   <?php
-  $f = fopen("xampp\apache\logs\access.txt", "r");
+  $f = fopen("C:\xampp\apache\logs\access.txt", "r");
   while(!feof($f)) {
 	    echo fgets($f) . "<br />";
 	}
