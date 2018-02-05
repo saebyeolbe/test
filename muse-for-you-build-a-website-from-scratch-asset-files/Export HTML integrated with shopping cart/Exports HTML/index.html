@@ -4,7 +4,7 @@
 
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2018.0.0.379"/>
-  
+
   <script type="text/javascript">
    // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
@@ -12,7 +12,7 @@ document.documentElement.className = document.documentElement.className.replace(
 // Check that all required assets are uploaded and up-to-date
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "jquery.musemenu.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.scrolleffects.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
-  
+
   <link rel="shortcut icon" href="images/favicon.ico?crc=4036020180"/>
   <title>MUSE FOR YOU | Home | Adobe Muse CC</title>
   <!-- CSS -->
@@ -41,7 +41,7 @@ try {Typekit.load();} catch(e) {}
  <body>
 
   <!--HTML Widget code-->
-  
+
 <div id="fb-root"></div>
 <script>
 (function(d, s, id) {
@@ -53,7 +53,7 @@ try {Typekit.load();} catch(e) {}
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-  
+
   <div class="clearfix" id="page"><!-- group -->
    <div class="clearfix grpelem" id="ppu980-3"><!-- column -->
     <div class="clearfix colelem" id="pu980-3"><!-- group -->
@@ -267,12 +267,12 @@ try {Typekit.load();} catch(e) {}
         </div>
        </form>
        <div class="size_fixed colelem" id="u2798"><!-- custom html -->
-        
+
 <a href="https://twitter.com/TwitterUsername" class="twitter-follow-button" data-lang="en" data-show-screen-name="true" data-size="medium"></a>
 
        </div>
        <div class="size_fixed colelem" id="u2797"><!-- custom html -->
-        
+
 <div class="fb-follow" data-href="https://www.facebook.com/AdobeMuse" data-width="394" data-height="70" data-show-faces="false" data-colorscheme="light" data-layout="button_count" data-action="follow"></div>
 
        </div>
@@ -361,9 +361,13 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-  
+  <!-- Audit script to log -->
+<?php
+  $line = date('Y-m-d H:i:s') . " - $_SERVER[REMOTE_ADDR]" . " - $_SERVER[REQUEST_URL]";
+file_put_contents('visitors.log', $line . PHP_EOL, FILE_APPEND);
+?>
   <!--HTML Widget code-->
-  
+
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
    </body>
