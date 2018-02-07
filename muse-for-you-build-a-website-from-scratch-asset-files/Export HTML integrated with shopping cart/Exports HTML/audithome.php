@@ -25,17 +25,17 @@ $con=mysqli_conect("localhost","root","","swapshop");
    echo "<td>".$id."</td>";
    echo "<td>".$name."</td>";
    echo "<td>".$code."</td>";
-   echo "<td>".$ima ge."</td>";
+   echo "<td>".$image."</td>";
    echo "<td>".$price."</td>";
 }
 echo "</table>"
 ?>
 
 <br>
-<table align-"center">
+<table align="center">
   <tr>
     <td> <a href="accesslog.php"><button class="button"><span>View Access logs</span></td>
   <tr>
-  </table>
+</table>
 </body>
 </html>
