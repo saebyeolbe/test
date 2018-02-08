@@ -1,0 +1,41 @@
+<html>
+<body>
+<b><center>All products</center></b>
+
+<?php
+$con=mysqli_conect("localhost","root","","swapshop");
+ if (!con){
+   die('Could not connect: ' . mysqli_connect_errno());
+ }
+
+ $showall=$con->prepare(" select * from tblproduct");
+ $showall->execute();
+ $showall->bind_result($id,$name,$code,$image,$price);
+ echo "<table align='center' border='1'>";
+ echo "<tr>";
+ echo "<th>ID</th>";
+ echo "<th>Name</th>";
+ echo "<th>Code</th>";
+ echo "<th>Image</th>";
+ echo "<th>Price</th>";
+ echo "</tr>";
+ while($showall->fetch())
+ {
+   echo "<tr>";
+   echo "<td>".$id."</td>";
+   echo "<td>".$name."</td>";
+   echo "<td>".$code."</td>";
+   echo "<td>".$image."</td>";
+   echo "<td>".$price."</td>";
+}
+echo "</table>"
+?>
+
+<br>
+<table align="center">
+  <tr>
+    <td> <a href="accesslog.php"  ><button class="button"><span>View Access logs</span></td>
+  <tr>
+</table>
+</body>
+</html>
