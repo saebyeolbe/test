@@ -1,0 +1,10 @@
+I let Paypal handle the payment part. It is working. The user can enter the quantity and add product to cart. Can checkout. 
+The cart will not update the product table (SQL) after checkout. Because if I code to subtract quantity from the table before the actual 
+Paypal checkout, the user can cancel Paypal checkout and the quantity will still decrease without actual purchase. 
+
+Shawn: "Can this e-commerce website company do manual data entry? Once the user has paid via Paypal, the company staff data entry member will
+	update the product table afterwards?" 
+
+Dr Yap: "Can, yes you can do that."
+
+Focus on the securing part. More important. 

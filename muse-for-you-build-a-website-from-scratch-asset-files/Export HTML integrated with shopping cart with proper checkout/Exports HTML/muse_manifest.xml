@@ -1,0 +1,137 @@
+<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="test.com" resolutions="1x" timestamp="1517392139173">
+  <folder name="css">
+    <file name="site_global.css" crc="160659830"/>
+    <file name="master_a-master.css" crc="101219067" ref="about:shop:contact:index:subscribe"/>
+    <file name="about.css" crc="132802032" ref="about"/>
+    <file name="shop.css" crc="296366671" ref="shop"/>
+    <file name="contact.css" crc="4159902238" ref="contact"/>
+    <file name="index.css" crc="3981950073" ref="index"/>
+    <file name="subscribe.css" crc="187599869" ref="subscribe"/>
+  </folder>
+  <folder name="assets">
+    <file name="slide.muse" crc="3909473693" seo="true" mt="1404962461000"/>
+    <file name="slideshow---musemismo.mulib" crc="503386300" seo="true" mt="1404962492000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:shop:subscribe:contact"/>
+    <file name="museutils.js" crc="3803043152" ref="index:about:shop:subscribe:contact"/>
+    <file name="whatinput.js" crc="86476730" ref="index:about:shop:subscribe:contact"/>
+    <file name="museconfig.js" crc="4153641093" ref="index:about:shop:subscribe:contact"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4148998990" ref="index:shop"/>
+    <file name="jquery.watch.js" crc="99325471" ref="index:about:shop:subscribe:contact"/>
+    <file name="jquery.musemenu.js" crc="3784699396" ref="index"/>
+    <file name="webpro.js" crc="242022427" ref="index:subscribe:contact"/>
+    <file name="musewpslideshow.js" crc="457073769" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="483674903" ref="index"/>
+    <file name="touchswipe.js" crc="4066113679" ref="index"/>
+    <file name="form_check.php" crc="62300408" ref="index"/>
+    <file name="form_process.php" crc="91775217" ref="index"/>
+    <file name="form-u2969.php" crc="391942200" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="530399994" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:about:shop:subscribe:contact"/>
+    <file name="require.js" crc="4157109226" ref="index:about:shop:subscribe:contact"/>
+    <file name="form-u1834.php" crc="4220189104" ref="subscribe"/>
+    <file name="form-u2915.php" crc="340917890" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="4036020180" ref="index"/>
+    <file name="muse-for-you-unsplash-image-6-u980-3-fr.png" crc="198830574" ref="index"/>
+    <file name="logo-1.png" crc="238045683" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-7-crop-u1668.jpg" crc="48520391" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="muse-for-you-unsplash-image-clothes-2-crop-u1694.jpg" crc="3812278505" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-3-crop-u1720.jpg" crc="500964131" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-4-crop-u1746.jpg" crc="4104400019" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-5-crop-u1772.jpg" crc="3993731432" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="trigger 2.png" crc="338833958" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-7-crop-u1674.jpg" crc="170330592" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-2-crop-u1700.jpg" crc="165044236" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-3-crop-u1726.jpg" crc="4273643321" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-410x11.jpg" crc="92534539" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-5-crop-u1778.jpg" crc="4267380079" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u1680-5.png" crc="3965600331" ref="index"/>
+    <file name="u1706-4.png" crc="3965600331" ref="index"/>
+    <file name="u1732-4.png" crc="3965600331" ref="index"/>
+    <file name="u1758-4.png" crc="3965600331" ref="index"/>
+    <file name="u1784-4.png" crc="3965600331" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="aoa-seolhyun.jpg" crc="412737129" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="doyeon_miss_me_profile.jpg" crc="3984938759" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="heechul-800x450.jpg" crc="4207102313" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="-momo-momo-twice-39555176-540-750.jpg" crc="4049302579" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-unsplash-image-clothes-2.jpg" crc="4049138014" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="muse-for-you-logo-svg.svg" crc="493126306" ref="index"/>
+    <file name="muse-for-you-logo-svg_poster_u991.png" crc="4294843381" ref="index"/>
+    <file name="pasted-svg-92032x93.svg" crc="3884110646" seo="true" ref="index:about:shop:subscribe:contact">
+      <caption webpage="index" alt=""/>
+      <caption webpage="subscribe" alt=""/>
+      <caption webpage="shop" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="contact" alt=""/>
+    </file>
+    <file name="pasted svg 92032x93_poster_.png" crc="4259621509" ref="index"/>
+    <file name="muse-for-you-unsplash-image-8-u435-fr.png" crc="3854042543" ref="shop"/>
+    <file name="sweater-layer 1.jpg" crc="531278341" ref="shop">
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="sweater.jpg" crc="4205028275" ref="shop">
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="hipster-hat-layer 2.jpg" crc="299027541" ref="shop">
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="hipster-hat.jpg" crc="147753009" ref="shop">
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="scarf-2-layer 3.jpg" crc="526889821" ref="shop">
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="scarf-2.jpg" crc="3790058034" ref="shop">
+      <caption webpage="shop" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="3792292006" seo="true" mt="1517392106961" redirect="true"/>
+  <file name="about.html" crc="4192712013" seo="true" mt="1517386820271" redirect="true"/>
+  <file name="shop.html" crc="138928443" seo="true" mt="1517386820271" redirect="true"/>
+  <file name="subscribe.html" crc="3800543413" seo="true" mt="1517386820271" redirect="true"/>
+  <file name="contact.html" crc="237233645" seo="true" mt="1517391300139" redirect="true"/>
+</manifest>

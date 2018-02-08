@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart with Paypal Checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/smart_cart.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		.card{
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="clearfix grpelem" id="pu985"><!-- group -->
+    <div class="browser_width mse_pre_init" id="u985-bw">
+     <div class="museBGSize" id="u985"><!-- simple frame --></div>
+    </div>
+    <nav class="MenuBar clearfix mse_pre_init" id="menuu999"><!-- horizontal box -->
+     <div class="MenuItemContainer clearfix grpelem" id="u1007"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix colelem" id="u1008" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u1009-4"><!-- content --><p>Home</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u1000"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u1001" href="about.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u1003-4"><!-- content --><p>About</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u1014"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u1015" href="shop.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u1017-4"><!-- content --><p>Shop</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u1021"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u1022" href="subscribe.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u1023-4"><!-- content --><p>Subscribe</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u1028"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u1031" href="contact.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u1033-4"><!-- content --><p>Contact</p></div></a>
+     </div>
+    </nav>
+   </div>
+
+    <br />
+    <section class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card">
+					<div class="card-header">Products</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- BEGIN PRODUCTS -->
+                            <div class="col-4">
+                                <div class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./product-images/camera.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">Canon 70D</h4>
+                                        <p data-name="product_desc" class="card-text">Product details: It's a camera lol</p>
+                                        <hr class="line">
+                                        
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+                                           <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$3,990.90</strong>
+                                            
+                                            <input name="product_price" value="3,990.90" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <span class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./product-images/external-hard-drive.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">External Hard Drive </h4>
+                                        <p data-name="product_desc" class="card-text">Product details: Read the product name lol it explains itself</p>
+                                    
+                                        <hr class="line">
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+											 <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$150.00</strong>
+                                            
+                                            <input name="product_price" value="150.00" type="hidden" />
+                                            <input name="product_id" value="145" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                <div class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./product-images/watch.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">Rolek</h4>
+                                        <p data-name="product_desc" class="card-text">Product details: Best fashion accessory</p>
+                                    
+                                        <hr class="line">
+                                        
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+											<div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$9,500.00</strong>
+                                            
+                                            <input name="product_price" value="9,500.00" type="hidden" />
+                                            <input name="product_id" value="145" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-4">
+                                <span class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./images/scarf-2-layer 3.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">Scarf </h4>
+                                        <p data-name="product_desc" class="card-text">Good scarf. Must buy. To be popular kidz. </p>
+                                    
+                                        <hr class="line">
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$19.50</strong>
+                                            
+                                            <input name="product_price" value="19.50" type="hidden" />
+                                            <input name="product_id" value="154" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </span>
+                            </div>
+                            
+                            <div class="col-4">
+                                <span class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./images/sweater-layer 1.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">Sweater </h4>
+                                        <p data-name="product_desc" class="card-text">It keepz you warmz and fuzzy hehe </p>
+                                    
+                                        <hr class="line">
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+                                           <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$25.00</strong>
+                                            
+                                            <input name="product_price" value="25.00" type="hidden" />
+                                            <input name="product_id" value="155" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </span>
+                            </div>
+                            
+                            <div class="col-4">
+                                <span class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./images/hipster-hat-layer 2.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">Hat </h4>
+                                        <p data-name="product_desc" class="card-text">If you don't have hair like mine, wear a cap! Ayee </p>
+                                    
+                                        <hr class="line">
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$15.00</strong>
+                                            
+                                            <input name="product_price" value="15.00" type="hidden" />
+                                            <input name="product_id" value="145" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+									
+                                </span>
+								
+                            </div>
+							<div class="col-4">
+                                <span class="sc-product-item thumbnail card">
+                                    <img class="card-img-top" data-name="product_image" src="./images/sweater-layer 1.jpg" alt="...">
+                                    <div class="caption card-body">
+                                        <h4 data-name="product_name" class="card-title">Sweater test transaction </h4>
+                                        <p data-name="product_desc" class="card-text">It keepz you warmz and fuzzy hehe </p>
+                                    
+                                        <hr class="line">
+                                        <div>
+                                            <div class="form-group">
+                                                <label>Size: </label>
+                                                <select name="product_size" class="form-control input-sm">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Color: </label><br />
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="red"> red
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="blue"> blue
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="product_color" value="green"> green
+                                                </label>
+                                            </div>
+                                           <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                                                </label>
+                                            </div>
+                                            <strong class="price pull-left">$0.01</strong>
+                                            
+                                            <input name="product_price" value="0.01" type="hidden" />
+                                            <input name="product_id" value="155" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </span>
+                            </div>
+                            <!-- END PRODUCTS -->
+                        </div>
+						
+                    </div>
+                </div>
+                
+            </div>
+            
+            <aside class="col-4">
+
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="POST"> 
+                    <!-- SmartCart element -->
+                    <div id="smartcart"></div>
+                    
+                    <!-- Paypal required info, Please update based on your details -->
+                    <input name="business" value="shawn.alchemize@gmail.com" type="hidden">            
+                    <input name="currency_code" value="SGD" type="hidden">
+					<!-- Erm What url shall we return to? Optional maybe? Because we won't be checking out for real so technically we won't be going into the successful part or cancel part...right? -->
+                    <input name="return" value="http://localhost/Export%20HTML%20integrated%20with%20shopping%20cart/Exports%20HTML/index.html" type="hidden">            
+                    <input name="cancel_return" value="http://localhost/Export%20HTML%20integrated%20with%20shopping%20cart/Exports%20HTML/shop.html" type="hidden">
+                    
+                    <input name="cmd" value="_cart" type="hidden">    
+                    <input name="upload" value="1" type="hidden">            
+                </form>
+				
+                
+            </aside>
+        </div>
+    </section>
+    
+    <!-- Include jQuery -->
+    <script src="js/jquery.min.js" type="text/javascript" ></script>
+    <!-- Include SmartCart -->
+    <script src="js/jquery.smartCart.js" type="text/javascript"></script>
+    <!-- Initialize -->
+    <script type="text/javascript">
+        $(document).ready(function(){    	
+			$('#smartcart').smartCart({
+                    submitSettings: {
+                        submitType: 'paypal' 
+                    },
+                    toolbarSettings: {
+                        checkoutButtonStyle: 'paypal'
+                    }
+            });
+		});
+    </script>
+	
+</body>
+</html>
