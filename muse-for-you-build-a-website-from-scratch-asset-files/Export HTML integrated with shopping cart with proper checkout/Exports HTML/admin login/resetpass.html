@@ -1,0 +1,18 @@
+<html>
+<body>	
+	<h1>Reset Password</h1>
+	<form action="resetpass.php" method="post">
+	<table>
+	<tr>
+		<td>OTP: <input type="number" name="otp" min="1"  placeholder="OTP Please" required pattern="(?=.*\d).{6,}" title="Check Your Email For OTP" /></td>
+	</tr>
+	<tr>
+		<td>Password : <input type="password" name="pass" maxlength="50" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter " /></td>
+	</tr>
+	<tr>
+	<td><button type="submit" value="Submit" class="button" style="vertical-align:middle"><span>Confirm</span></button></td>
+	</tr>
+	</form>
+	</table>
+</body>
+</html>

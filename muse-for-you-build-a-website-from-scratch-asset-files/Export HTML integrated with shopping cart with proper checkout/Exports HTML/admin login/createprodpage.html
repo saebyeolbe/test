@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create Product</title>
+</head>
+
+<body>
+	<form action="createprod.php" method="post">
+	<h1> Insert Product </h1>
+		<table>
+			<tr>
+				<td>Enter ProductID :</td><td><input type="value" min="1" maxlength="8" name="prodid" required pattern="(?=.*\d).{3,}" title="Minimum 3 Numbers pLeASe YESSSS"/></td>
+			</tr>
+			<tr>
+				<td>Enter Product Name:</td><td><input type="text" name="prodname" maxlength="50" required pattern="{1,}"/></td>
+			</tr>
+			<tr>
+				<td>Enter Product Price:</td><td><input type="decimal" min="1" name="prodprice" required pattern="[0-9.-]+\.[0-9.-]{2}" title=" example: $XXX.XX " /></td>
+			</tr>
+			<tr>
+				<td>Enter Product Code:</td><td><input type="text" name="prodcode" maxlength="6" required pattern="[A-Za-z].{1,}" /></td>
+			</tr>
+			<tr>
+				<td>Enter Product Size:</td><td><input type="text" name="prodsize" maxlength="5" required pattern="[A-Za-z].{1,}" /></td>
+			</tr>
+			<tr>
+			<td><button type="submit" value="Submit" class="button" style="vertical-align:middle"><span>Next</span></button></td>
+			</tr>
+	</form>
+	</table>
+			<tr>
+				<td><a href="showprod.php"><button type="button" class="button" style="vertical-align:middle"><span>Back</span></button></a></td>
+			</tr>
+	
+
+</body>
+</html>
+

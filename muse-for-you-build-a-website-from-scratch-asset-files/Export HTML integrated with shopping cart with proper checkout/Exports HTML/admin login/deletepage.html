@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<html>
+<body>
+	<form action="delete.php" method="post">
+	<h1>Delete Account</h1>
+	
+	<table>
+		<tr>
+			<td><input type="text" name="user" maxlength="11" placeholder="Username" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Contain 5 or more characters that are of at least one number, and one uppercase and lowercase letter" /></td>
+			<td><input type="password" name="pass" maxlength="50" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter" /></td>
+		</tr>
+		<tr>
+		<td><button type="submit" value="Submit" class="button" style="vertical-align:middle"><span>Delete</span></button></td>
+		</tr>
+	</form>
+		<tr>
+			<td><a href="homepage.html"><button type="button" value="button" class="button"><span>Back</span></button></a></td> 
+		</tr>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<body>	
+	<h1>Admin Login</h1>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
+	<form action="login.php" method="post">
+	<table>
+	<tr>
+		<td>Username: <input type="text" name="user" maxlength="11" placeholder="Username" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Contain 5 or more characters that are of at least one number, and one uppercase and lowercase letter" /></td>
+	</tr>
+	<tr>
+		<td>Password : <input type="password" name="pass" maxlength="50" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter " /></td>
+	</tr>
+	<tr>
+		<br/><td>Please log in from 9am to 7pm ONLY. </td>
+	</tr>
+	</form>
+	</table>
+	<br />
+
+	<div class="g-recaptcha" data-sitekey="6LcUgkMUAAAAAEnAC8VU1l2BvpHJMjpA4ySff3pc"></div>
+	
+	<table>
+	<td><a href="login.php"><button type="submit" value="submit">Login</button></a></td>
+	<td><a href="createaccpage.html"><button type="button" class="button"><span>Register</span></button></a></td>
+	<td><a href="forgetpass.html"><button type="submit" value="submit">Forget Password</button></a></td>
+	<br/> 
+	</table>
+</body>
+</html>
