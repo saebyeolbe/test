@@ -27,8 +27,11 @@ $form = array(
 		'unknown_method' => 'Unknown server request method'
 	),
 	'email' => array(
-		'from' => 'test@gmail.com',
-		'to' => 'test@gmail.com'
+		'from' => 'shawn.alchemize@gmail.com',
+		'to' => 'shawn.alchemize@gmail.com'
+	),
+	'recaptcha2' => array(
+		'private_key' => '6LfXrkUUAAAAAKM4hWOaByU3_c0JPZYHO6mNa7JW'
 	),
 	'fields' => array(
 		'custom_U2916' => array(
@@ -56,6 +59,16 @@ $form = array(
 			'label' => 'Message',
 			'required' => false,
 			'errors' => array(
+			)
+		),
+		'g-recaptcha-response' => array(
+			'order' => 4,
+			'type' => 'recaptcha2',
+			'label' => 'Image Verification',
+			'required' => true,
+			'errors' => array(
+				'required' => 'Field \'Image Verification\' is required.',
+				'format' => 'Incorrect reCAPTCHA 2.0 value.'
 			)
 		)
 	)
