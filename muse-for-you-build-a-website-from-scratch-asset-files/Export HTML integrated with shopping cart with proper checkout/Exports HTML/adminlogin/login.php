@@ -9,7 +9,7 @@ if (!$con)
 <?php
 date_default_timezone_set( 'Asia/Singapore' );
 
-if ((date ("G") >= 9) && (date ("G") <= 22)) 
+if ((date ("G") >= 9) && (date ("G") <= 22))
 {
 	session_start();
 
@@ -20,6 +20,11 @@ if ((date ("G") >= 9) && (date ("G") <= 22))
 	$response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$recaptcha_secret.'&response='.$_POST['g-recaptcha-response']);
 	$response = json_decode($response, true);
 	$login=mysqli_query($con, "SELECT `password`,`email` from admin WHERE username='". $_SESSION["username"] ."'");
+
+	$_SESSION['login']=$username;
+	$_SESSION['id']=$num['id'];
+	$uip=$_SERVER['REMOTE_ADDR'];
+	mysqli_query($con,"insert into userLog(userId,username,userIp) values('".$_SESSION['id']."','".$_SESSION['login']."','$uip')");
 
 	while($row = mysqli_fetch_array($login))
 	{
@@ -44,7 +49,7 @@ if ((date ("G") >= 9) && (date ("G") <= 22))
 		}
 	}
 	else
-	{	
+	{
 		echo"Incorrect Password";
 		header ("Location: loginpage.html");
 	}
@@ -52,7 +57,5 @@ if ((date ("G") >= 9) && (date ("G") <= 22))
 else
 {
 	die("Sorry, access is restricted at this timing. Pleaseeeeeeee Come back between 9am and 7pm.");
-}	
+}
 ?>
-
-

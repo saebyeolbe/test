@@ -6,7 +6,7 @@ if(isset($_POST['login']))
 $username=$_POST['username']; // Get username
 $password=$_POST['password']; // get password
 //query for match the user inputs
-$ret=mysqli_query($con,"SELECT * FROM login WHERE userName='$username' and password='$password'");
+$ret=mysqli_query($con,"SELECT * FROM admin WHERE userName='$username' and password='$password'");
 $num=mysqli_fetch_array($ret);
 // if user inputs match if condition will run
 if($num>0)
