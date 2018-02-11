@@ -16,7 +16,7 @@ $password_hash = password_hash($pwd, PASSWORD_BCRYPT);
 $admin = mysqli_query($con, "INSERT INTO admin (`username`,`userID`,`password`,`address`,`email`,`contactno`) VALUES ('$username',NULL,'$password_hash','$address','$email','$contact')");
 
 
-if ($admin) 	//execute query
+if ($admin) 	//execute query 
 {
  echo "New admin account added";
 }
@@ -32,7 +32,7 @@ else
 </br>
 	<table>
 	<tr>
-		<td><a href="loginpage.php"><button type="submit" value="Submit" class="button"><span>Login</span></button></td>
+		<td><a href="loginpage.html"><button type="submit" value="Submit" class="button"><span>Login</span></button></td>
 	</tr>
 	</table>
 

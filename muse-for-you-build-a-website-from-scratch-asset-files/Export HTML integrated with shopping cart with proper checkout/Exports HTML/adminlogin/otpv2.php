@@ -3,10 +3,10 @@
 	$otpverify = $_POST['otp'];
 	if($_SESSION["otp"] == $otpverify)
 	{
-		header ("Location: homepage.html");
+		header ("Location: homepage.php");
 	}
 	else
 	{
-		header ("Location: loginpage.php");
+		header ("Location: loginpage.html");
 	}
 ?>

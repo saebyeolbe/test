@@ -20,12 +20,12 @@ while($row = mysqli_fetch_array($showuser))
 	$hash= $row['password'];
 }
 if(password_verify($password, $hash))
-{
+{							
 	echo "Account successfully removed.";
 	$deleteuser=mysqli_query($con, "DELETE FROM admin WHERE userID='". $_SESSION["id"] ."'");
 	?>
-
-	<td><a href="loginpage.php"><button type="submit" value="Submit" class="button"><span>Complete</span></button></td>
+	
+	<td><a href="loginpage.html"><button type="submit" value="Submit" class="button"><span>Complete</span></button></td>
 	<?php
 }
 else
@@ -37,4 +37,4 @@ else
 </br>
 
 </body>
-</html>
+</html> 

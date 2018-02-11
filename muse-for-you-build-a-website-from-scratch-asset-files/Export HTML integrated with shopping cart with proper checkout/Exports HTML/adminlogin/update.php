@@ -54,7 +54,7 @@ echo "</table>";
 <table>
 <tr>
 	<td><a href="updateinfopage.php"><button type="submit" value="Submit" class="button"><span>Back</span></button></td>
-	<td><a href="homepage.html"><button type="submit" value="Submit" class="button"><span>Confirm</span></button></td>
+	<td><a href="homepage.php"><button type="submit" value="Submit" class="button"><span>Confirm</span></button></td>
 </tr>
 
 </body>

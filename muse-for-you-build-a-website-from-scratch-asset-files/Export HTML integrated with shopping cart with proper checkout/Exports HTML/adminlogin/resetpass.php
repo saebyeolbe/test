@@ -14,12 +14,12 @@ if($_SESSION["otp"] == $otpverify)
 	$pass=mysqli_real_escape_string($con, $_REQUEST['pass']);
 	$password_hash = password_hash($pass, PASSWORD_BCRYPT);
 	$updateuser=mysqli_query($con, "UPDATE admin SET password = '$password_hash' WHERE username ='". $_SESSION["username"] ."'");
-	?><a href="loginpage.php"><button type="button" value="button" class="button"><span>Back</span></button></a><?php
+	?><a href="loginpage.html"><button type="button" value="button" class="button"><span>Back</span></button></a><?php
 	die ("Update Complete");
 }
 else
 {
-	header ("Location: loginpage.php");
+	header ("Location: loginpage.html");
 }
 
 session_unset();

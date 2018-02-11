@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 
 session_start();
 
-//require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 function sendOTP($email1,$otp) 
 {
 	$mail = new PHPMailer(true);                               // Passing `true` enables exceptions
