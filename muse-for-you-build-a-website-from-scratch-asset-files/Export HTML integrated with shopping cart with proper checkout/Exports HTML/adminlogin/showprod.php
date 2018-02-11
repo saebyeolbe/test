@@ -41,7 +41,7 @@ echo "</table>";
 <td> <a href="selectprodpage.html"><button class="button" style="vertical-align:middle"><span>Select Product</span></button></td>
 <td> <a href="selectprodupdate.html"><button class="button" style="vertical-align:middle"><span>Update Product</span></button></td>
 <td> <a href="deleteprodpage.html"><button class="button" style="vertical-align:middle"><span>Remove Product</span></button></td>
-<td> <a href="homepage.html"><button class="button" style="vertical-align:middle"><span>Home</span></button></td>
+<td> <a href="homepage.php"><button class="button" style="vertical-align:middle"><span>Home</span></button></td>
 </tr> </table>
 
 

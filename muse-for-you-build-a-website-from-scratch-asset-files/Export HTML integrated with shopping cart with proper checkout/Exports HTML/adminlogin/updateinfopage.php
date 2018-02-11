@@ -51,7 +51,7 @@
 	</form>
 	<br/><br/><br/>
 	<tr>
-		<td><a href="homepage.html"><button type="button" value="button" class="button"><span>Back</span></button></a></td> 
+		<td><a href="homepage.php"><button type="button" value="button" class="button"><span>Back</span></button></a></td> 
 		<td><a href="deletepage.html"><button type="button" value="button" class="button"><span>Delete Account</span></button></td>
 	</tr>
 	</table>
