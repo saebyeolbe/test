@@ -24,7 +24,7 @@ Welcome : <?php echo $_SESSION['login'];?> </a>| <a href="logout.php">Logout</a>
 <th>Login Time</th>
 </tr>
 
-<?php $query=mysqli_query($con,"select * from userLog where userId='".$_SESSION['id']."'");
+<?php $query=mysqli_query($con,"select * from userLog");
 $cnt=1;
 while($row=mysqli_fetch_array($query))
 {
